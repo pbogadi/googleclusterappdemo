@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.mike.givemewingzz.mapsclusterdemo.R;
 import com.mike.givemewingzz.mapsclusterdemo.service.OttoHelper;
@@ -73,7 +75,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
 
         // Hide List Fragment by default
         getSupportFragmentManager().beginTransaction().hide(listFragment).commit();
-
+        Toast.makeText(this, "Pushed Successfully into ur project", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -251,6 +253,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
             getSupportFragmentManager().beginTransaction().hide(listFragment).commit();
         } else if (v.getTag().equals(IN_SEARCH_TAG)) {
             // Todo : open search tab and create request
+            Log.d(TAG, "");
         }
     }
 }
