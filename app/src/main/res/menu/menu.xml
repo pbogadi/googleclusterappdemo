@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.riyaz.bbva_compass_project.MainActivity">
+    <item
+        android:id="@+id/maps_item"
+        android:title="Maps" />
+    <item
+        android:id="@+id/list_item"
+        android:title="List View" />
+</menu>
